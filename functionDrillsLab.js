@@ -14,9 +14,10 @@
 //CODE HERE
 
 function helloWorld(){
-  print "Hello, World!"
+  console.log("Hello, World!")
 }
 
+helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -25,6 +26,10 @@ function helloWorld(){
 */
 
 //CODE HERE
+
+const jsNinja = () => { return 'I am a JavaScript ninja!'}
+
+console.log(jsNinja())
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -36,6 +41,11 @@ function helloWorld(){
 
 //CODE HERE
 
+function printName(name){
+  console.log(name)
+}
+
+printName('Jorge')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -49,6 +59,11 @@ function helloWorld(){
 
 //CODE HERE
 
+function greeting(name){
+  console.log(`Hello, ${name}`)
+}
+
+greeting('Jorge')
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -63,6 +78,22 @@ function helloWorld(){
 
 //CODE HERE
 
+const compareNums = (num1, num2) => {
+  //////LOGIC//////
+
+  // if(num1 > num2){
+      // return num1
+  //   console.log(num1)
+  // } else{
+      // return num2
+  //   console.log(num2)
+  // }
+
+  /////Arrow/////
+  return num1 > num2 ? num1 : num2; 
+}
+
+console.log(compareNums(2,4))
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -74,6 +105,20 @@ function helloWorld(){
 
 //CODE HERE
 
+function add(num1,num2){
+  stringToNum1 = parseInt(num1)
+  stringToNum2 = parseInt(num2)
+  total = stringToNum1 + stringToNum2
+  
+  //returns as a String data type.
+  // return `${total}`
+
+  //returns as a Number data type.
+  return total
+}
+
+//logs to console the total when returned as a Number data type.
+console.log(add(4,4))
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -82,7 +127,7 @@ function helloWorld(){
   Uncomment the correct `console.log` underneath.
 */
 
-const exclaim = function(str) {
+function exclaim(str) {
   return str.toUpperCase() + '!!!'
 }
 
