@@ -225,6 +225,23 @@ console.log(nameGreeting3)
 
 //CODE HERE
 
+function faveColorFinder(colorStr){
+  if(colorStr === 'red'){
+    return 'red is a great color'
+  }else if(colorStr === 'green'){
+    return 'green is a solid favorite color'
+  }else if(colorStr === 'black'){
+    return 'so trendy'
+  }else{
+    return 'you need to evaluate your favorite color choice'
+  }
+}
+
+let colorRating = colorStr => faveColorFinder(colorStr)
+
+console.log(colorRating('red'))
+console.log(colorRating('green'))
+console.log(colorRating('black'))
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Ri ley', 'Eric', 'Brenna', 'Karl']
@@ -236,6 +253,13 @@ let namesArr = ['Cameron', 'Ri ley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function printAllNames(arrOfnames){
+  for(let i = 0; i < arrOfnames.length; i++){
+    console.log(arrOfnames[i])
+  }
+}
+
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -247,6 +271,22 @@ let namesArr = ['Cameron', 'Ri ley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function thatsOdd(Number){
+  if(Number % 2 === 0){
+    return 'That is not odd!'
+  }else{
+    return 'That is odd indeed!'
+    // return 'That is odd indeed!'
+  }
+
+}
+
+
+let oddChecker = Number => thatsOdd(Number)
+// const oddChecker = console.log(thatsOdd(3))
+
+console.log(oddChecker(23))
+console.log(oddChecker(2))
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -259,6 +299,10 @@ let namesArr = ['Cameron', 'Ri ley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+
+const bestMovie = movStr => `${movStr} is the best movie ever!`
+
+console.log(bestMovie('Sharknado'))
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -274,6 +318,21 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 
 //CODE HERE
 
+function bigOrSmall(numsArr){
+  const answers = []
+  for(i = 0; i < numsArr.length; i++){
+    if(numsArr[i] > 100){
+      answers.push('big')
+    }else if(numsArr[i] <= 100){
+      answers.push('small')
+    }
+  }
+  ///why??
+  return console.log(arrayEvaluator = answers)
+}
+
+bigOrSmall([15, 150 , 15 , 150])
+bigOrSmall(bigOrSmallArray)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -284,6 +343,24 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+
+function theEliminator(contArr, loserStr){
+  console.log(contArr)
+
+  const newContArr = []
+  for(i = 0; i < contArr.length; i++){
+    if(contArr[i] === 'Glimmer'){
+      contArr.slice()
+    }else{
+     newContArr.push(contArr[i])
+    }
+  }
+  return console.log(newContArr)
+}
+
+theEliminator(contestants, loser)
+
+// console.log(theEliminator(contestants,'Glimer'))
 
 
 ////////////////// PROBLEM 17 ////////////////////
