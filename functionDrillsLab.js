@@ -132,7 +132,7 @@ function exclaim(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -148,7 +148,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -158,8 +158,10 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+////// Variable = declaration (function) "return" => `string ${variable.method()+!!!`}
+const exclaimThree = str => console.log(`${str.toLocaleUpperCase()}!!!`)
 
-
+exclaimThree('??')
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -173,7 +175,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -188,6 +190,28 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+function nameCheck(name){
+  if(name === 'Steven'){
+    return 'What is up Steven?'
+  } else if(name === 'Bryan'){
+    return 'Hey Bryan!'
+  }else{
+    return `Cool name, ${name}`
+  }
+}
+
+const nameGreeting = nameCheck('Steven')
+const nameGreeting2 = nameCheck('Bryan')
+const nameGreeting3 = nameCheck('Jorge')
+
+console.log(nameGreeting)
+console.log(nameGreeting2)
+console.log(nameGreeting3)
+
+// Attempt at single line arrow syntax
+// const nameCheck2 = name => name === 'Steven' ? console.log('What is up Steven?') : name === 'Bryan' ? console.log('Hey Bryan!') : name ? console.log(`Cool name, ${name}`) 
+
+// nameCheck2(Steven)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -203,7 +227,7 @@ function exclaimFour(str) {
 
 
 ////////////////// PROBLEM 12 ////////////////////
-let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
+let namesArr = ['Cameron', 'Ri ley', 'Eric', 'Brenna', 'Karl']
 /*
   Create a function called printAllNames that takes in a single argument (an array of names).
   Using a for loop, iterate over that array and console log each name.
